@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Find the scipt link for License number at the end -->
+    <link rel="stylesheet" href="reg.css">
+    <title>Registration</title>
+</head>
+
+<header class="main-header">
+    <nav class="main-header__navbar">
+        <ul class="main-header__ul">
+            <li class="main-header__li"><a href="#">Login</a></li>
+            <li class="main-header__li"><a href="#">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- Ignore this side navbar is to be executed after login -->
+
+    <!-- <div class="sidenav">
+      <a href="/">Home</a>
+      <a href="/admin/add-product">Add Product</a>
+    </div>     -->
+
+</header>
+<body>
+    <main>
+        <form method="POST" action="/admin/response">
+            <div class=card>
+              <div class="form-row">
+                <div class="form-group col-md-2">
+                  <label class="form-label">Username</label>
+                </div>
+                  <div class="col-md-10">
+                  <input type="text" class="form-control" id="ip_user" placeholder="Username" required>
+                </div>
+              </div>  
+              <div class="form-row">
+                <div class="form-group col-md-2">
+                  <label class="form-label">Email</label>
+                </div>
+                <div class="col-md-10">
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-2">
+                  <label class="form-label">Password</label>
+                </div>
+                <div class="col-md-10">
+                  <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <!-- <div class="form-check"> -->
+                  <div class=" form-group col-md-2">
+                    <label class="form-label">You are</label>
+                  </div>
+                  <div class="col-md-10">
+                    <select id="role" class="form-control" required>
+                      <option  value="Patient">Patient</option>
+                      <option  value="Doctor">Doctor</option>
+                    </select>
+                  </div>
+                <!-- </div> -->
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-2">
+                  <label id="l_no" class="form-label">License No.</label>
+                </div>
+                <div class="col-md-10">
+                  <input class="form-control" id="License_no" placeholder="License Number">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <button type="submit" class="btn btn-primary" style="width: 50%;margin-left: 20%;">Sign in</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        <!-- Do load the script at the end else it reads the script too early to find the tags related to ids-->
+        <script src="reg.js"></script>
+    </main>
+</body>
+</html>
