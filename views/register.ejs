@@ -1,0 +1,76 @@
+<%- include("partials/header"); -%>
+<div class="container form-container">
+  <h1 class="login-header">Welcome, please sign in</h1>
+  <form method="POST" action="/register">
+    <div class="card">
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label class="form-label">Username</label>
+        </div>
+        <div class="col-md-9">
+          <input name="username" type="text" class="form-control" id="ip_user" placeholder="Username" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label class="form-label">Email</label>
+        </div>
+        <div class="col-md-9">
+          <input name="email" type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label class="form-label">Password</label>
+        </div>
+        <div class="col-md-9">
+          <input name="password" type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <!-- <div class="form-check"> -->
+        <div class=" form-group col-md-3">
+          <label class="form-label">You are</label>
+        </div>
+        <div class="col-md-9">
+          <select name="role" id="role" class="form-control" required>
+            <option value="Patient">Patient</option>
+            <option value="Doctor">Doctor</option>
+          </select>
+        </div>
+        <!-- </div> -->
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-3">
+          <label id="l_no" class="form-label">License No.</label>
+        </div>
+        <div class="col-md-9">
+          <input name="License_no" class="form-control" id="License_no" placeholder="License Number">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <input type="submit" value="Sign in" class="btn">
+        </div>
+      </div>
+    </div>
+
+  </form>
+</div>
+<script type="text/javascript">
+  $("#role").change(function() {
+      if ($(this).val() == "Doctor") {
+          $('#License_no').show();
+          $('#l_no').show();
+          $('#License_no').attr('required', '');
+          $('#License_no').attr('data-error', 'This field is required.');
+      } else {
+          $('#License_no').hide();
+          $('#l_no').hide();
+          $('#License_no').removeAttr('required');
+          $('#License_no').removeAttr('data-error');
+      }
+      });
+  $("#role").trigger("change");
+</script>
+<%- include("partials/footer"); -%>

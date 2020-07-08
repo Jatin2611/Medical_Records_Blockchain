@@ -1,0 +1,104 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #eaeaea;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat-Bold', sans-serif;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+footer {
+  text-align: center;
+}
+
+label{
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-size: smaller;
+}
+/* containers */
+.container-fluid {
+  padding: 2% 15%;
+}
+
+/* headings */
+.big-heading {
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  font-weight: bolder;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* header section */
+.header {
+  background-color: #08d9d6;
+  color: #eaeaea;
+}
+
+
+/* navigation bar */
+.navbar {
+  padding: 0 ;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-family: 'Montserrat-light';
+  font-size: 1.2rem;
+}
+
+.navbar-dark .navbar-toggler {
+    color: black;
+    border-color: rgba(255,255,255,.1);
+}
+
+/* footer */
+.social-icon {
+  margin: 20px 10px;
+}
+
+/* login form  */
+.form-container {
+  padding: 4% 15%;
+}
+.login-header {
+  text-align:center;
+  font-weight: bold;
+}
+.card{
+  margin: 50px 50px 0;
+  padding: 5%;
+  border-color:  #ff2e63;
+  border-width: 0.2rem;
+}
+.btn {
+  font-size: 2rem;
+  border-color:  #ff2e63;
+  border-width: 0.2rem;
+  border-radius: 5%;
+  font-weight: 600;
+  margin: 5% 33% ;
+}
+@media screen and (max-height: 450px) {
+  .form-container {
+    padding: 0;
+    margin: 0;
+  }
+}
