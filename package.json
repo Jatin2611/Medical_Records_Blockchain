@@ -1,26 +1,36 @@
 {
-  "name": "Medical_Records_Blockchain",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Jatin2611/Medical_Records_Blockchain.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Jatin2611/Medical_Records_Blockchain/issues"
-  },
-  "homepage": "https://github.com/Jatin2611/Medical_Records_Blockchain#readme",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "ejs": "^3.1.3",
-    "express": "^4.17.1",
-    "mongoose": "^5.9.22"
-  }
+	"name": "express-demo",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"test": "jest --watchAll --verbose"
+	},
+	"engines": {
+		"node": "13.7.0"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"bcrypt": "^5.0.0",
+		"body-parser": "^1.19.0",
+		"compression": "^1.7.4",
+		"config": "^3.3.1",
+		"cors": "^2.8.5",
+		"ejs": "^3.1.3",
+		"express": "^4.17.1",
+		"express-async-errors": "^3.1.1",
+		"fawn": "^2.1.5",
+		"helmet": "^3.23.2",
+		"joi": "^14.3.1",
+		"joi-objectid": "^3.0.1",
+		"jsonwebtoken": "^8.5.1",
+		"lodash": "^4.17.15",
+		"moment": "^2.20.1",
+		"mongoose": "^5.9.19",
+		"nodemon": "^2.0.4",
+		"winston": "^2.4.0"
+	}
 }
